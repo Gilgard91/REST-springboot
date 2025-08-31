@@ -19,20 +19,25 @@ public class Book {
     @Column(name = "author")
     private String author;
 
+    @Column(name = "thumbnail")
+    private String thumbnail;
+
     // Costruttori
     public Book() {}
 
-    public Book(String title, String description, String author) {
+    public Book(String title, String description, String author, String thumbnail) {
         this.title = title;
         this.description = description;
         this.author = author;
+        this.thumbnail = thumbnail;
     }
 
-    public Book(Long id, String title, String description, String author) {
+    public Book(Long id, String title, String description, String author, String thumbnail) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.author = author;
+        this.thumbnail = thumbnail;
     }
 
     // Getters e Setters
