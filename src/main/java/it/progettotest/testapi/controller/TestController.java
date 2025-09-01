@@ -19,7 +19,6 @@ public class TestController {
     @Autowired
     public TestController(BookService bookService) {
         this.bookService = bookService;
-        // Inizializzo dati di test se il database è vuoto
         inizializzaLibri();
     }
 

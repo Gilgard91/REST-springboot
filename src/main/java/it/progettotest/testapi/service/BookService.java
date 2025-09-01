@@ -38,13 +38,13 @@ public class BookService {
         return bookRepository.findByTitle(title);
     }
 
-    // Metodo per inizializzare dati di test (opzionale)
+    // Metodo per inizializzare dati di test
     public void inizializzaLibri() {
 
             List<Book> booksToSave = List.of(
-                    new Book("pippo", "la storia di pippo", "pippolandia"),
-                    new Book("pluto", "le avventure di pluto", "plutolandia"),
-                    new Book("paperino", "le avventure di paperino", "paperolandia")
+                    new Book("pippo", "la storia di pippo", "pippolandia", ""),
+                    new Book("pluto", "le avventure di pluto", "plutolandia", ""),
+                    new Book("paperino", "le avventure di paperino", "paperolandia", "")
             );
             bookRepository.saveAll(booksToSave);
 
