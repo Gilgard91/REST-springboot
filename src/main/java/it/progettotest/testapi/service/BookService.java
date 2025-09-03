@@ -38,7 +38,6 @@ public class BookService {
 //        return bookRepository.findByTitle(title);
 //    }
 
-    // Metodo per inizializzare dati di test
     public void inizializzaLibri() {
 
             List<Book> booksToSave = List.of(

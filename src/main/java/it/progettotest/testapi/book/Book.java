@@ -22,7 +22,6 @@ public class Book {
     @Column(name = "thumbnail")
     private String thumbnail;
 
-    // Costruttori
     public Book() {}
 
     public Book(String title, String description, String author, String thumbnail) {
@@ -40,7 +39,6 @@ public class Book {
         this.thumbnail = thumbnail;
     }
 
-    // Getters e Setters
     public Long getId() {
         return id;
     }
