@@ -19,7 +19,7 @@ public class TestController {
     @Autowired
     public TestController(BookService bookService) {
         this.bookService = bookService;
-        inizializzaLibri();
+//        inizializzaLibri();
     }
 
     public void inizializzaLibri() {
@@ -38,7 +38,6 @@ public class TestController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    // Metodi aggiuntivi per completare le operazioni CRUD
     @PostMapping("/books")
     public Book createBook(@RequestBody Book book) {
         return bookService.saveBook(book);

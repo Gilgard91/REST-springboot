@@ -34,9 +34,9 @@ public class BookService {
         bookRepository.deleteById(id);
     }
 
-    public Optional<Book> getBookByTitle(String title) {
-        return bookRepository.findByTitle(title);
-    }
+//    public Optional<Book> getBookByTitle(String title) {
+//        return bookRepository.findByTitle(title);
+//    }
 
     // Metodo per inizializzare dati di test
     public void inizializzaLibri() {
